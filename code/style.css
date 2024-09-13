@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.chat-container {
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Add styles for the title */
+.chat-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #128C7E;
+    background-size: cover;
+    font-family: "Brush Script MT", cursive;
+}
+
+
+.chat-box {
+    display: flex;
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #e5ddd5;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.message {
+    padding: 8px 12px;
+    margin: 8px 0;
+    border-radius: 20px;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+
+.sent {
+    background-color: #DCF8C6;
+    color: black;
+    align-self: flex-end;
+}
+
+.received {
+    background-color: #ffffff;
+    color: grey;
+    align-self: flex-start;
+}
+
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    /* Keep input area fixed at the bottom */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+#send-btn {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #128C7E;
+}
+
+/* Timestamp styling */
+.timestamp {
+    font-size: 7px;
+    color: gray;
+    margin-top: 5px;
+    text-align: right;
+}
