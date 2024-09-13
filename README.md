@@ -19,8 +19,8 @@ This repository contains three files:
 The first image shows the initial user interface before interaction, and the second image displays the interface after some interactions.
 
 <p align="center">
-    <img src="./img/image1.png" alt="Image 1" style="margin-right: 10px;">
-    <img src="./img/image2.png" alt="Image 2">
+    <img src="./code/img/image1.png" alt="Image 1" style="margin-right: 10px;">
+    <img src="./code/img/image2.png" alt="Image 2">
 </p>
 
 ## License
